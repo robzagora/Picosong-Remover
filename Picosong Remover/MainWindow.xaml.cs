@@ -25,7 +25,7 @@
 
             value = value.Replace(Environment.NewLine, ",");
 
-            string[] values = value.Split(',').Where(v => !string.IsNullOrWhiteSpace(v)).Select(v => @"http://picosong.com/delete/" + v.Split('/').Last()).ToArray();
+            string[] values = value.Split(',').Where(v => !string.IsNullOrWhiteSpace(v)).Select(v => @"https://picosong.com/delete/" + v.Split('/').Last()).ToArray();
 
             foreach (string uri in values)
             {
