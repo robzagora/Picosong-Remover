@@ -1,7 +1,7 @@
-﻿<Application x:Class="Picosong_Remover.App"
+﻿<Application x:Class="Picosong.Remover.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Picosong_Remover"
+             xmlns:local="clr-namespace:Picosong.Remover"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
