@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Picosong.Remover"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="MainWindow" Height="300" Width="800">
     <Grid Margin="16">
         <Grid.ColumnDefinitions>
@@ -15,6 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
         <TextBox Name="Links"
@@ -22,10 +24,7 @@
                  Grid.Column="1"
                  HorizontalAlignment="Stretch"
                  TextWrapping="Wrap" 
-                 VerticalAlignment="Top"
-                 Height="128"
-                 MinHeight="128"
-                 MaxHeight="128"
+                 VerticalAlignment="Stretch"
                  VerticalScrollBarVisibility="Auto"
                  AcceptsReturn="True"
                  TextChanged="Links_TextChanged"/>
@@ -38,8 +37,10 @@
             HorizontalAlignment="Center"
             HorizontalContentAlignment="Center"
             Click="Execute_Click"/>
-        
-        <Label Name="State"
+
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Name="State"
                Foreground="Green"
                Content="Finished"
                Visibility="Hidden" 
